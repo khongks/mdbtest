@@ -1,0 +1,38 @@
+{
+    "channel": [
+      {
+        "connectionManagement":
+        {
+          "heartbeatInterval": 30
+        },
+        "name": "DEV.APP.SVRCONN.1",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "localhost",
+              "port": 1414
+            }
+          ],
+          "queueManager": "QMGRP"
+        },
+        "type": "clientConnection"
+      },
+      {
+        "connectionManagement":
+        { 
+          "heartbeatInterval": 30
+        },
+        "name": "DEV.APP.SVRCONN.2",
+        "clientConnection": {
+          "connection": [
+            {
+              "host": "localhost",
+              "port": 1415
+            }
+          ],
+          "queueManager": "QMGRP"
+        },
+        "type": "clientConnection"
+      }
+    ]
+}
