@@ -9,25 +9,13 @@ Instructions
    For QM1
 
    ```
-   docker run --env LICENSE=accept \
-  --env MQ_QMGR_NAME=QM1 \
-  --publish 1414:1414 \
-  --publish 9443:9443 \
-  --detach \
-  --env MQ_APP_PASSWORD=passw0rd \
-  --name QM1 icr.io/ibm-messaging/mq:latest
+   docker run --env LICENSE=accept --env MQ_QMGR_NAME=QM1 --publish 1414:1414 --publish 9443:9443 --detach --env MQ_APP_PASSWORD=passw0rd --name QM1 icr.io/ibm-messaging/mq:latest
    ```
    
    For QM2
 
    ```
-   docker run --env LICENSE=accept \
-  --env MQ_QMGR_NAME=QM2 \
-  --publish 1415:1414 \
-  --publish 9444:9443 \
-  --detach \
-  --env MQ_APP_PASSWORD=passw0rd \
-  --name QM2 icr.io/ibm-messaging/mq:latest
+   docker run --env LICENSE=accept --env MQ_QMGR_NAME=QM2 --publish 1415:1414 --publish 9444:9443 --detach --env MQ_APP_PASSWORD=passw0rd --name QM2 icr.io/ibm-messaging/mq:latest
    ```
    
 3. Add a new channel in the queue managers. Execute the following command to attach to the docker container running the queue manager.
